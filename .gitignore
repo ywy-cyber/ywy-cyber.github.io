@@ -1,0 +1,8 @@
+# 构建产物（由 Hugo 生成，不入库）
+public/
+resources/
+.hugo_build.lock
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db

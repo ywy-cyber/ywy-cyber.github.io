@@ -1,0 +1,41 @@
+{{- define "main" }}
+
+{{- /* 项目展示页：读 data/projects.yaml，按当前语言取描述，渲染卡片网格 */ -}}
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+</header>
+
+{{- with .Content }}
+<div class="post-content md-content">
+    {{ . }}
+</div>
+{{- end }}
+
+{{- $lang := .Lang }}
+<div class="project-grid">
+    {{- range hugo.Data.projects }}
+    {{- $desc := index .desc $lang }}
+    {{- if not $desc }}{{ $desc = index .desc "en" }}{{ end }}
+    <a class="project-card" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+        <div class="project-head">
+            <span class="project-name">{{ .name }}</span>
+            {{- if .stars }}
+            <span class="project-star" title="GitHub Stars">★ {{ .stars }}</span>
+            {{- end }}
+        </div>
+        <p class="project-desc">{{ $desc }}</p>
+        <div class="project-meta">
+            {{- with .lang }}<span class="project-lang">{{ . }}</span>{{ end }}
+            {{- with .pushed }}<span class="project-pushed">
+                {{- if eq $lang "zh" }}更新于{{ else }}Updated{{ end }} {{ . }}
+            </span>{{ end }}
+        </div>
+    </a>
+    {{- end }}
+</div>
+
+{{- end }}{{/* end main */}}

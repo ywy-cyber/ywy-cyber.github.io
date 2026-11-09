@@ -1,0 +1,141 @@
+# ═══════════════════════════════════════════════════════════════
+#  Hugo 站点配置 —— 双语（中文默认 / 英文）
+#  主题：PaperMod（web前端/themes/PaperMod）
+#  部署：GitHub Actions → https://ywy-cyber.github.io/
+# ═══════════════════════════════════════════════════════════════
+
+baseURL: "https://ywy-cyber.github.io/"
+theme: "PaperMod"
+title: "Ying Wangyou"
+
+# 中文为默认语言；两种语言都放在子目录（/zh/、/en/），根路径自动跳转
+defaultContentLanguage: "zh"
+defaultContentLanguageInSubdir: false
+
+enableRobotsTXT: true
+enableEmoji: true
+hasCJKLanguage: true
+timeZone: "Asia/Shanghai"
+
+pagination:
+    pagerSize: 8
+
+taxonomies:
+    tag: tags
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+
+params:
+    env: "production"
+    author: "Ying Wangyou"
+    defaultTheme: "auto"
+    ShowReadingTime: true
+    ShowWordCount: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    TocOpen: false
+    ShowRssButtonInSectionTermList: true
+    ShowAllPagesInArchive: true
+    DateFormat: "2006-01-02"
+    mainSections:
+        - posts
+    disableThemeToggle: false
+    disableLangToggle: false
+    displayFullLangName: true
+    socialIcons:
+        - name: "github"
+          url: "https://github.com/ywy-cyber"
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys:
+            - title
+            - permalink
+            - summary
+            - content
+    assets:
+        disableFingerprinting: false
+
+languages:
+    zh:
+        label: "中文"
+        locale: "zh-CN"
+        contentDir: "content/zh"
+        weight: 1
+        title: "Ying Wangyou"
+        params:
+            description: "Ying Wangyou 的个人主页 —— 项目、笔记与踩过的坑。"
+            label:
+                text: "Ying Wangyou"
+            homeInfoParams:
+                Title: "Ying Wangyou"
+                Content: >
+                    程序员。做 LLM 训练与数据工程，也写浏览器自动化、量化工具这一类小东西。
+                    这里放我的项目、技术笔记，以及真实踩过的坑。
+        menu:
+            main:
+                - name: "文章"
+                  url: "posts/"
+                  weight: 10
+                - name: "项目"
+                  url: "projects/"
+                  weight: 20
+                - name: "标签"
+                  url: "tags/"
+                  weight: 30
+                - name: "关于"
+                  url: "about/"
+                  weight: 40
+                - name: "搜索"
+                  url: "search/"
+                  weight: 50
+    en:
+        label: "English"
+        locale: "en"
+        contentDir: "content/en"
+        weight: 2
+        title: "Ying Wangyou"
+        params:
+            description: "Personal home of Ying Wangyou — projects, notes, and pitfalls."
+            label:
+                text: "Ying Wangyou"
+            homeInfoParams:
+                Title: "Ying Wangyou"
+                Content: >
+                    Developer. I work on LLM training and data engineering, and build small
+                    tools around browser automation and quantitative investing.
+                    This site holds my projects, notes, and the pitfalls I actually hit.
+        menu:
+            main:
+                - name: "Posts"
+                  url: "posts/"
+                  weight: 10
+                - name: "Projects"
+                  url: "projects/"
+                  weight: 20
+                - name: "Tags"
+                  url: "tags/"
+                  weight: 30
+                - name: "About"
+                  url: "about/"
+                  weight: 40
+                - name: "Search"
+                  url: "search/"
+                  weight: 50
