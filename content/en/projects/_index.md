@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Everything I keep on GitHub, laid out as cards — click through to the repository."
+description: "Only two repositories are public; everything else is private."
 ---
 
-These are the public repositories. Private ones are not listed here; ask me if you need something.
+The two below are open implementations that accompany papers. Other tools and experiments live in private repositories — ask me if you need something.

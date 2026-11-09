@@ -6,7 +6,7 @@
 
 baseURL: "https://ywy-cyber.github.io/"
 theme: "PaperMod"
-title: "Ying Wangyou"
+title: "应忘幽"
 
 # 中文为默认语言；两种语言都放在子目录（/zh/、/en/），根路径自动跳转
 defaultContentLanguage: "zh"
@@ -38,7 +38,7 @@ markup:
 
 params:
     env: "production"
-    author: "Ying Wangyou"
+    author: "应忘幽"
     defaultTheme: "auto"
     ShowReadingTime: true
     ShowWordCount: false
@@ -79,16 +79,17 @@ languages:
         locale: "zh-CN"
         contentDir: "content/zh"
         weight: 1
-        title: "Ying Wangyou"
+        title: "应忘幽"
         params:
-            description: "Ying Wangyou 的个人主页 —— 项目、笔记与踩过的坑。"
+            description: "应忘幽 —— 人工智能安全方向的研究与工程笔记。"
             label:
-                text: "Ying Wangyou"
+                text: "应忘幽"
             homeInfoParams:
-                Title: "Ying Wangyou"
+                Title: "应忘幽"
                 Content: >
-                    程序员。做 LLM 训练与数据工程，也写浏览器自动化、量化工具这一类小东西。
-                    这里放我的项目、技术笔记，以及真实踩过的坑。
+                    做人工智能安全研究：大模型的攻与防、模型可解释性，
+                    以及把这些东西落成能跑起来的工程。
+                    这里放研究方向、公开项目与工作笔记，不写机构与署名。
         menu:
             main:
                 - name: "文章"
@@ -111,17 +112,19 @@ languages:
         locale: "en"
         contentDir: "content/en"
         weight: 2
-        title: "Ying Wangyou"
+        title: "Ian Wayne"
         params:
-            description: "Personal home of Ying Wangyou — projects, notes, and pitfalls."
+            description: "Ian Wayne — research and engineering notes on AI security."
+            author: "Ian Wayne"
             label:
-                text: "Ying Wangyou"
+                text: "Ian Wayne"
             homeInfoParams:
-                Title: "Ying Wangyou"
+                Title: "Ian Wayne"
                 Content: >
-                    Developer. I work on LLM training and data engineering, and build small
-                    tools around browser automation and quantitative investing.
-                    This site holds my projects, notes, and the pitfalls I actually hit.
+                    I work on AI security: attacks and defenses on large models,
+                    model interpretability, and turning both into systems that run.
+                    This site keeps my research directions, public projects and notes —
+                    no institutions, no bylines.
         menu:
             main:
                 - name: "Posts"

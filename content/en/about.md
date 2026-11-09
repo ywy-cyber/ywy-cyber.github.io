@@ -1,21 +1,24 @@
 ---
 title: "About"
-description: "A short introduction, and where to find me."
+description: "What I work on, and what has been done."
 ---
 
-## Who I am
+## What I work on
 
-Ying Wangyou, a developer.
+AI security. Three threads:
 
-What I do day to day: LLM training and data engineering — data cleaning, dialogue generation, fine-tuning and evaluation around it — plus small tools for browser automation and quantitative investing that I actually use myself.
+- **LLM security** — prompt injection attacks and defenses around code models, detection of AI-generated code, and watermarking / copyright auditing of system prompts.
+- **Interpretability** — locating and filtering noisy training data at token level; reading a model's internal knowledge through neuron activation patterns.
+- **Engineering** — training-process optimization, safety guardrails, agent security.
 
-## What I care about
+## Track record
 
-- **Working beats pretty**, but once it works it has to be readable by someone other than me.
-- **Write down the pitfalls.** Making the same mistake twice is no longer a technical problem.
-- **Tools must be hand-over-able**: a script only its author can use is not a tool.
+- Multiple papers in **CCF-A venues** across AI and security, most of them first-author.
+- Co-drafted several **national standards** on generative-AI security.
+- Contributed to the AI-data-security part of a **government-planned textbook** ("14th Five-Year Plan").
+- **First place** in security competitions on automated penetration and agent security.
+- **Reviewer** for international conferences and journals in the field.
 
-## Find me
+## A note
 
-- GitHub: <https://github.com/ywy-cyber>
-- Everything on this site also goes out over RSS
+This site deliberately leaves out institutions, paper titles and bylines: it says what has been done and what can be done, not who to look up. For anything more specific, reach me on GitHub.
