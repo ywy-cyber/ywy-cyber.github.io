@@ -86,12 +86,20 @@ languages:
                 text: "应忘幽"
             homeInfoParams:
                 Title: "应忘幽"
-                Content: >
-                    做人工智能安全研究：大模型的攻与防、模型可解释性，
-                    以及把这些东西落成能跑起来的工程。
-                    这里放研究方向、公开项目与工作笔记，不写机构与署名。
+                Content: |
+                    人工智能安全方向的研究者，工学博士。研究大模型的攻与防、模型可解释性，
+                    也把这些东西做成能跑的系统。
+
+                    - **研究方向**：大模型安全、模型可解释性、训练与对齐工程
+                    - **代表成果**：CCF-A 类会议与期刊论文，生成式人工智能国家标准起草，“十四五”规划教材编写
+                    - **工程经历**：大模型微调优化、安全护栏、Agent 安全
+
+                    这个站放研究方向、公开项目与工作笔记。
         menu:
             main:
+                - name: "主页"
+                  url: "/"
+                  weight: 5
                 - name: "文章"
                   url: "posts/"
                   weight: 10
@@ -120,13 +128,21 @@ languages:
                 text: "Ian Wayne"
             homeInfoParams:
                 Title: "Ian Wayne"
-                Content: >
-                    I work on AI security: attacks and defenses on large models,
-                    model interpretability, and turning both into systems that run.
-                    This site keeps my research directions, public projects and notes —
-                    no institutions, no bylines.
+                Content: |
+                    Researcher in AI security, PhD in cyberspace security.
+                    I work on attacks and defenses for large models and on model interpretability,
+                    and I turn both into systems that actually run.
+
+                    - **Research**: LLM security, model interpretability, training and alignment engineering
+                    - **Selected work**: CCF-A papers, co-drafted national standards for generative AI, contributions to a "14th Five-Year Plan" textbook
+                    - **Engineering**: LLM fine-tuning optimization, safety guardrails, agent security
+
+                    This site keeps my research directions, public projects and notes.
         menu:
             main:
+                - name: "Home"
+                  url: "/"
+                  weight: 5
                 - name: "Posts"
                   url: "posts/"
                   weight: 10
