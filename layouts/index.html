@@ -1,0 +1,38 @@
+{{- define "main" }}
+
+{{- $posts := where site.RegularPages "Type" "posts" }}
+
+<article class="home">
+    <header class="hero">
+        <h1 class="hero-name">{{ site.Title }}</h1>
+        {{- with .Description }}
+        <p class="hero-tagline">{{ . }}</p>
+        {{- end }}
+        <div class="hero-meta">
+            {{- range site.Params.socialIcons }}
+            <a class="meta-link" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me">{{ .title | default (.name | title) }}&nbsp;↗</a>
+            {{- end }}
+            <a class="meta-link" href="{{ "index.xml" | relLangURL }}">RSS</a>
+        </div>
+    </header>
+
+    <div class="home-body md-content">
+        {{ .Content }}
+    </div>
+
+    {{- with $posts }}
+    <section class="home-sec">
+        <h2 class="sec-title">{{ if eq $.Lang "zh" }}文章{{ else }}Posts{{ end }}</h2>
+        <ul class="plain-list">
+            {{- range . }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="when">{{ .Date.Format "2006-01-02" }}</span>
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
