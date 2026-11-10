@@ -1,17 +1,8 @@
-- name: "ShadowCode"
-  url: "https://github.com/ywy-cyber/ShadowCodeEPI"
+- name: "browser-use"
+  url: "https://github.com/ywy-cyber/browser-use-full-access"
   lang: "Python"
-  stars: 1
-  pushed: "2025-07-08"
+  stars: 0
+  pushed: "2026-11-10"
   desc:
-      zh: "针对代码大模型的外部提示注入攻击：如何在目标模型不可见内部状态的前提下，把恶意载荷藏进看似无害的代码上下文。"
-      en: "External prompt injection against code LLMs — hiding malicious payloads in seemingly harmless code context, without access to the model internals."
-
-- name: "PromptCOS"
-  url: "https://github.com/ywy-cyber/PromptCOS"
-  lang: "Python"
-  stars: 5
-  pushed: "2025-11-08"
-  desc:
-      zh: "系统提示词的版权审计：仅凭内容层面的输出相似度，判断两段提示词是否同源。"
-      en: "Copyright auditing for system prompts: deciding whether two prompts share an origin, using only content-level output similarity."
+      zh: "让任意 AI 直接驱动你自己登录状态的 Chrome：一个 MV3 扩展 + 仅本机回环的桥接服务 + 单一 CLI 入口，提供快照、点击、输入、切标签、执行 JS 等 16 个浏览器工具。不用另建浏览器配置，也不走无头浏览器。"
+      en: "A skill that lets any AI drive your own logged-in Chrome: an MV3 extension, a loopback-only bridge and a single CLI entry point — 16 browser tools (snapshot, click, type, tabs, JS eval) with no separate profile and no headless browser."

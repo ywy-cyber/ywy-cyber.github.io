@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Only two repositories are public; everything else is private."
+description: "Only one project is public; everything else is private."
 ---
 
-The two below are open implementations that accompany papers. Other tools and experiments live in private repositories — ask me if you need something.
+This is the only public repository at the moment. Other tools and experiments live in private repositories — ask me if you need something.
