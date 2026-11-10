@@ -4,5 +4,5 @@
   stars: 0
   pushed: "2026-11-10"
   desc:
-      zh: "让任意 AI 直接驱动你自己登录状态的 Chrome：一个 MV3 扩展 + 仅本机回环的桥接服务 + 单一 CLI 入口，提供快照、点击、输入、切标签、执行 JS 等 16 个浏览器工具。不用另建浏览器配置，也不走无头浏览器。"
-      en: "A skill that lets any AI drive your own logged-in Chrome: an MV3 extension, a loopback-only bridge and a single CLI entry point — 16 browser tools (snapshot, click, type, tabs, JS eval) with no separate profile and no headless browser."
+      zh: "让任意 AI 直接驱动你日常使用的 Chrome：一个 MV3 扩展、一个只监听本机回环的桥接服务、一个统一 CLI 入口，提供快照、点击、输入、切标签、执行 JS 等 16 个浏览器工具。不另建浏览器配置，也不用无头浏览器。"
+      en: "Lets any AI drive the Chrome you already use: an MV3 extension, a loopback-only bridge and one CLI entry point — 16 browser tools (snapshot, click, type, tabs, JS eval), with no separate profile and no headless browser."

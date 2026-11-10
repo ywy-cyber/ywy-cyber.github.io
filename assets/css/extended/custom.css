@@ -235,6 +235,12 @@ body.list {
     margin: 1.4rem 0;
 }
 
+/* 只有一个项目时，让卡片占满一行但不过度拉宽 */
+.project-card:only-child {
+    grid-column: 1 / -1;
+    max-width: 560px;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
