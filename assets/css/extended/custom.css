@@ -47,6 +47,25 @@ body.list {
     border-bottom: 1px solid var(--border);
 }
 
+.hero-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.hero-avatar {
+    flex: none;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--code-bg);
+}
+
+.hero-text {
+    min-width: 0;
+}
+
 .hero-name {
     margin: 0 0 0.6rem;
     font-size: clamp(1.9rem, 4.5vw, 2.4rem);
@@ -283,5 +302,15 @@ body.list {
 
     .home {
         padding-top: 1.75rem;
+    }
+
+    .hero-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-avatar {
+        width: 72px;
+        height: 72px;
     }
 }

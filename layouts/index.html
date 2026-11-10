@@ -4,15 +4,21 @@
 
 <article class="home">
     <header class="hero">
-        <h1 class="hero-name">{{ site.Title }}</h1>
-        {{- with .Description }}
-        <p class="hero-tagline">{{ . }}</p>
-        {{- end }}
-        <div class="hero-meta">
-            {{- range site.Params.socialIcons }}
-            <a class="meta-link" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me">{{ .title | default (.name | title) }}&nbsp;↗</a>
-            {{- end }}
-            <a class="meta-link" href="{{ "index.xml" | relLangURL }}">RSS</a>
+        <div class="hero-row">
+            <img class="hero-avatar" src="{{ "images/avatar.png" | relURL }}" alt="" width="96" height="96" loading="lazy">
+            <div class="hero-text">
+                <h1 class="hero-name">{{ site.Title }}</h1>
+                {{- with .Description }}
+                <p class="hero-tagline">{{ . }}</p>
+                {{- end }}
+                <div class="hero-meta">
+                    <a class="meta-link" href="mailto:wsmgga@gmail.com">wsmgga@gmail.com</a>
+                    {{- range site.Params.socialIcons }}
+                    <a class="meta-link" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me">{{ .title | default (.name | title) }}&nbsp;↗</a>
+                    {{- end }}
+                    <a class="meta-link" href="{{ "index.xml" | relLangURL }}">RSS</a>
+                </div>
+            </div>
         </div>
     </header>
 
