@@ -126,6 +126,8 @@ body.list {
 .home-body p {
     margin: 0 0 0.55rem;
     line-height: 1.8;
+    /* 避免末行只剩一两个字/一个词（孤行） */
+    text-wrap: pretty;
 }
 
 .home-body strong {
