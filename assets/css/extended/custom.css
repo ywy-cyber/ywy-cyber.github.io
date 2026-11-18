@@ -135,6 +135,17 @@ body.list {
     color: var(--primary);
 }
 
+/* 赛事条目：只加粗末尾名次，条目间距比普通段距更紧 */
+.home-body.md-content p.comp-item {
+    margin: 0 0 0.2rem;
+    line-height: 1.7;
+}
+
+.home-body.md-content p.comp-item:last-child,
+.home-body.md-content p.comp-item:last-of-type {
+    margin-bottom: 0;
+}
+
 /* 论文条目里的发表处：比正文淡一档 */
 .home-body .venue {
     color: var(--secondary);

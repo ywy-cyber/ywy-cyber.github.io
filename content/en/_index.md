@@ -21,6 +21,5 @@ A national "14th Five-Year Plan" textbook. I contributed to its compilation, pla
 
 ## Competitions
 
-**Tencent Cloud Hackathon · Automated Penetration Testing Challenge — 1st place**
-
-**CAC National AI-for-Cybersecurity Competition · Agent Security track — 1st place**
+<p class="comp-item">Tencent Cloud Hackathon · Automated Penetration Testing Challenge — <strong>1st place</strong></p>
+<p class="comp-item">CAC National AI-for-Cybersecurity Competition · Agent Security track — <strong>1st place</strong></p>
