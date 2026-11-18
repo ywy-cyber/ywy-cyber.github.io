@@ -5,7 +5,7 @@ description: "PhD from the College of Computer Science and Technology, Zhejiang 
 
 ## Experience
 
-BSc in Computer Science from Xi'an Jiaotong University, then a direct-entry PhD in Cyberspace Security at the College of Computer Science and Technology, Zhejiang University.
+BSc in Computer Science from Xi'an Jiaotong University, then a PhD in Cyberspace Security at the College of Computer Science and Technology, Zhejiang University.
 
 During the PhD I published several first-author papers at IEEE S&P, ICLR, IEEE TDSC and other top venues, and reviewed for NeurIPS, ICLR and other conferences.
 
