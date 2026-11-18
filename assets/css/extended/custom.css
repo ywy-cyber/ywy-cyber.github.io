@@ -137,7 +137,7 @@ body.list {
 
 /* 赛事条目：只加粗末尾名次，条目间距比普通段距更紧 */
 .home-body.md-content p.comp-item {
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.375rem;
     line-height: 1.7;
 }
 
